@@ -1,0 +1,508 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+nav {
+    border-top: 5px solid #264653;
+}
+
+.link-right {
+    margin-left: auto;
+}
+
+h4 {
+    color: gray;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.last-link {
+    margin-top: 0;
+    margin: 0;
+    margin-right: 4rem;
+}
+
+.last-link img {
+    border-radius: 0% !important;
+}
+
+.hero-btn,
+button {
+    margin: 2rem;
+    margin-bottom: .2rem;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    background-color: #118ab2;
+    padding: 1rem;
+    width: 16rem;
+    color: white;
+    font-weight: bolder;
+    border-radius: .5rem;
+    position: relative;
+    transition: .3s linear all;
+}
+
+button {
+    padding: 1rem;
+    background-color: #118ab2;
+    white-space: nowrap;
+}
+
+.hero-btn::after {
+    content: "";
+    opacity: 0;
+    width: :auto;
+    margin-left: .3rem;
+    margin-top: -.1rem;
+    white-space: nowrap;
+}
+
+.hero-btn:hover::after {
+    content: "| 🛈 Buyer's Guide";
+    position: absolute;
+    opacity: 1;
+    transition: 0.4s ease all;
+}
+
+button:hover {
+    width: :auto;
+    background-color: #0f799c;
+    transition: .3s ease all;
+}
+
+.hero-btn:hover {
+    background-color: #118ab2;
+    padding-right: 8rem;
+    transition: .15s linear padding;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 1rem;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: #264653;
+    z-index: 1;
+}
+
+li:hover {
+    color: #1e3741;
+    transition: 0.3s ease color;
+}
+
+.hero-container {
+    height: 41rem;
+}
+
+.hero {
+    max-width: 100%;
+    text-align: center;
+    color: #65645f;
+}
+
+.hero-img {
+    background-image: url(pexels-monica-silvestre-1034584%20.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 45rem;
+    top: 0;
+    z-index: -1;
+    background-color: #e9c46a;
+    background-position: -0rem -12rem;
+}
+
+.hero-main {
+    margin-left: 55rem;
+    padding-top: 14rem;
+}
+
+.design-tag {
+    font-size: 14px;
+    color: darkgray;
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero-desc {
+    font-size: 17px;
+    color: #7c7b78;
+}
+
+.container {
+    display: flex;
+    margin: .5rem;
+    width: 99%;
+}
+
+.obj {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+    height: 22.5rem;
+    margin: .2rem;
+    text-align: center;
+    padding: .9rem;
+    border-radius: 1rem;
+}
+
+.obj button {
+    width: 10rem;
+    margin: auto;
+}
+
+.obj img {
+    margin: auto;
+}
+
+.item-desc-tag {
+    font-weight: bolder;
+    color: gray;
+}
+
+.item-desc-tag:last-of-type {
+    font-size: 14px;
+    margin-bottom: .5rem;
+
+}
+
+img {
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.blue-desc {
+    margin-left: .6rem;
+    color: #447e95;
+    max-width: 100%;
+}
+
+.reviews-container {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: 8rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+}
+
+.review {
+    text-align: center;
+    margin: 2rem;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.review img {
+    opacity: .5;
+}
+
+.review:hover,
+.review:hover img {
+    opacity: 1;
+    filter: grayscale(0%);
+    transition: 0.3s ease all;
+}
+
+.check {
+    margin-left: .3rem;
+    display: flex;
+    width: 1.28rem;
+    height: 1.28rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 4rem;
+    background-color: deepskyblue;
+}
+
+.name-container {
+    color: gray;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    margin-top: -3rem;
+    text-align: left;
+}
+
+.reviews {
+    width: 100%;
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+}
+.reviews .customer-container{
+margin-left: auto;
+    margin-right: auto;
+    margin: 1rem;
+}
+.customer-reviews {
+    width: 100%;
+    display: flex;
+        
+}
+
+.customer-reviews h3:first-of-type {
+    text-align: center;
+    color: gray;
+}
+
+.customer-container {
+    position: relative;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 4rem;
+    margin: 1rem;
+    width: 26rem;
+    justify-content: center;
+}
+
+.logo {
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+.location {
+    text-align: left;
+    margin-left: 1.84rem;
+    margin-top: -1.9rem;
+    color: darkgray;
+}
+
+.avatar {
+    filter: grayscale(100%);
+    margin-left: -3rem;
+    border-radius: 50%;
+}
+
+.stars {
+    font-size: 32px;
+    text-align: center;
+    margin: 1rem;
+    color: gold;
+}
+
+.title-main {
+    font-weight: bold;
+    color: gray;
+}
+
+.title {
+    margin-bottom: 1rem;
+}
+
+.cta {
+    transform: translateY(15rem);
+    opacity: 0;
+}
+
+.active {
+    transform: translateY(0rem);
+    opacity: 1;
+    transition: 1.5s ease all;
+}
+
+.reviews button {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #e9ecef;
+    padding: 2rem;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.rec {
+    position: absolute;
+    bottom: 1rem;
+    right: 20%;
+    padding-bottom: 1rem;
+}
+
+.newsletter {
+    width: 40rem;
+    background-color: #ced4da;
+    padding: 2rem;
+    border-top: 2px solid gray;
+    border-radius: 0 0rem 1rem 1rem;
+}
+
+.newsletter p {
+    color: gray;
+    margin: .7rem;
+    margin-top: 0rem;
+    text-align: center;
+}
+
+footer input {
+    padding: .8rem;
+    padding-right: 9rem;
+    margin: 0rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: gray;
+}
+
+footer form {
+    margin-left: 19%;
+}
+
+footer button {
+    width: 8rem;
+    margin: 0;
+    margin-left: -.5rem;
+    padding: .8rem;
+    border-radius: 0 .0rem .0rem 0;
+    background-color: black;
+}
+
+.dropdown {
+    z-index: 1;
+    position: relative;
+}
+
+.options {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .35);
+    position: absolute;
+}
+
+.dropdown:hover .options {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0rem);
+    transition: .4s ease all;
+}
+
+.options p {
+    position: relative;
+    top: -4.3rem;
+    left: 12rem;
+    color: gray;
+    font-weight: bolder;
+}
+
+.options li {
+    margin: 0;
+    background-color: #fff;
+    display: flex;
+    width: 27rem;
+}
+
+.options li:nth-of-type(even) {
+    background-color: whitesmoke;
+}
+
+.options li:hover {
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+.options li:last-of-type {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.small-icon {
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 0rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom {
+    text-align: center;
+    color: gray;
+}
+
+@media only screen and (max-width: 1300px) {
+    .hero-img {
+        background-position: -0rem -0rem;
+    }
+
+    .reviews {
+        height: auto;
+    }
+
+    .customer-reviews {
+        display: flex;
+        -webkit-flex-direction: column;
+    }
+    .reviews-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .hero-main{
+        margin: 0;
+        padding: 0;
+        padding: 2rem;
+        margin-top: 14rem;
+        background-color: #fff;
+    }
+    .desc-tag{
+     width: 100%;   
+    }
+    li{
+        margin: .5rem;
+    }
+    .customer-container {
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .obj {
+        height: auto;
+    }
+    .last-link{
+        margin: 0;
+        margin-top: -.5rem;
+    }
+    .hero-img{
+        position: fixed;
+    }
+}
